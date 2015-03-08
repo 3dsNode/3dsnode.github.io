@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>3ds Node</title>
+    <link rel="icon" href="./img/icon.ico">
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/index.css" />
     <script src="js/vendor/modernizr.js"></script>
@@ -19,8 +20,109 @@
 		<a class="github" href="https://github.com/3dsNode" target="_blank"><img src="./img/github.png"></img></a>
 	</div>
 	<div class="parallax-content">
-		<p>Coming soon...</p>
+		<div data-magellan-expedition="fixed">
+			<dl class="sub-nav">
+				<dd data-magellan-arrival="about"><a href="#about">What is 3dsNode?</a></dd>
+				<dd data-magellan-arrival="apps"><a href="#apps">Apps</a></dd>
+				<dd data-magellan-arrival="examples"><a href="#examples">Examples</a></dd>
+				<dd data-magellan-arrival="twitter"><a href="#twitter">Twitter</a></dd>
+			</dl>
+		</div>
+		<a name="about"></a>
+		<h3 data-magellan-destination="apps">What is 3dsNode?</h3>
+			<div class="panel">
+				<p>This web application for New 3DS was created to connect to a PC and enhance the capacities of the New 3DS. All you need is a computer compatible with Node JS and Java.</p>
+			</div>
+		<br/>
+		<a name="apps"></a>
+		<h3 data-magellan-destination="apps">Apps</h3>
+		<ul class="small-block-grid-3">
+			<li>
+				<div class="panel">
+					<h4>Main App</h4>
+					<a href="#" data-reveal-id="aboutMainModal" class="button">About</a>
+					<a class="th" href="./img/main-app.jpg">
+						<img src="./img/main-app.jpg">
+					</a>
+				</div>
+			</li>
+			<li>
+				<div class="panel">
+					<h4>Controller App</h4>
+					<a href="#" data-reveal-id="aboutControllerModal" class="button">About</a>
+					<a class="th" href="./img/controller-app.jpg">
+						<img src="./img/controller-app.jpg">
+					</a>
+				</div>
+			</li>
+			<li>
+				<div class="panel">
+					<h4>Media App</h4>
+					<a href="#" data-reveal-id="aboutMediaModal" class="button">About</a>
+					<a class="th" href="./img/media-app.jpg">
+						<img src="./img/media-app.jpg">
+					</a>
+				</div>
+			</li>
+		</ul>
+		<br/>
+		<a name="examples"></a>
+		<h3 data-magellan-destination="examples">Examples of use</h3>
+		<div class="panel">
+			<a href="#" data-reveal-id="controllerVideoModal" class="button">Controller App</a>
+		</div>
+		<br/>
+		<a name="twitter"></a>
+		<h3 data-magellan-destination="twitter">Twitter</h3>
+		<div class="panel">
+			<a class="twitter-timeline" href="https://twitter.com/3dsNode" data-widget-id="574651617796055040">Tweets de @3dsNode</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		</div>
+	</div>
 
+	<div id="controllerVideoModal" class="reveal-modal" data-reveal="">
+		<h2>Controller App</h2>
+		<div class="flex-video">
+			<iframe width="420" height="315" src="https://www.youtube.com/embed/6xasTIx7rN8" frameborder="0" allowfullscreen></iframe>
+		</div>
+		<a class="close-reveal-modal">&#215;</a>
+	</div>
+
+	<div id="aboutControllerModal" class="reveal-modal" data-reveal="">
+		<h2>About: Controller App</h2>
+		<div class="panel">
+			<h4>Keyboard</h4>
+			<table>
+  				<thead>
+    					<tr><th>New 3DS key</th><th>Emulated</th></tr>
+				</thead>
+				<tbody>
+					<tr><td>A</td><td>Keyboard A</td></tr>
+					<tr><td>B</td><td>Keyboard B</td></tr>
+					<tr><td>X</td><td>Keyboard X</td></tr>
+					<tr><td>Y</td><td>Keyboard Y</td></tr>
+					<tr><td>Stick</td><td>Mouse Move (x5 speed)</td></tr>
+					<tr><td>C-Stick</td><td>Mouse Move (x20 speed)</td></tr>
+				</tbody>
+			</table>
+		</div>
+		<a class="close-reveal-modal">&#215;</a>
+	</div>
+
+	<div id="aboutMediaModal" class="reveal-modal" data-reveal="">
+		<h2>About: Media App</h2>
+		<div class="panel">
+			Coming soon...
+		</div>
+		<a class="close-reveal-modal">&#215;</a>
+	</div>
+
+	<div id="aboutMainModal" class="reveal-modal" data-reveal="">
+		<h2>About: Main App</h2>
+		<div class="panel">
+			Coming soon...
+		</div>
+		<a class="close-reveal-modal">&#215;</a>
 	</div>
     
 	<script src="js/vendor/jquery.js"></script>
