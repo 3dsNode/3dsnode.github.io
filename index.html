@@ -26,6 +26,8 @@
 				<dd data-magellan-arrival="pics"><a href="#pics">Pictures</a></dd>
 				<dd data-magellan-arrival="apps"><a href="#apps">Apps</a></dd>
 				<dd data-magellan-arrival="examples"><a href="#examples">Examples</a></dd>
+				<dd data-magellan-arrival="howto"><a href="#howto">How to use</a></dd>
+				<dd data-magellan-arrival="downloads"><a href="#downloads">Downloads</a></dd>
 				<dd data-magellan-arrival="twitter"><a href="#twitter">Twitter</a></dd>
 			</dl>
 		</div>
@@ -75,10 +77,30 @@
 			<a href="#" data-reveal-id="controllerVideoModal" class="button">Controller App</a>
 		</div>
 		<br/>
+		<a name="howto"></a>
+		<h3 data-magellan-destination="howto">How to use</h3>
+		<div class="panel">
+			<h4>General use</h4>
+			<ol>
+				<li><p>Download and start the server <a href="#downloads">(Downloads section)</a></p></li>
+				<li><p>Open your New 3ds browser</p></li>
+				<li><p>Open one of the urls listed by the server (e.g. http://192.168.0.1:25505)</p></li>
+				<li><p>Have fun!</p></li>
+			</ol>
+			<h4>Configure Media App</h4>
+			<ol>
+				<li><p>Proceed to "General use" instructions</p></li>
+				<li><p>Open /config/default.json file on the server folder</p></li>
+				<li><p>Edit "Media" folders</p></li>
+				<li><p>Open the "Media" App on your New 3ds</p></li>
+				<li><p>Have fun!</p></li>
+			</ol>
+		</div>
+		<br/>
 		<a name="downloads"></a>
 		<h3 data-magellan-destination="downloads">Downloads</h3>
 		<div class="panel">
-			<a href="#" data-reveal-id="downloadsModal" class="button disabled"><img src="./img/download.png">Download for Windows/Mac/Linux</a>
+			<a href="#" data-reveal-id="laststableModal" class="button"><img src="./img/download.png">Download last stable build</a>
 		</div>
 		<br/>
 		<a name="twitter"></a>
@@ -171,10 +193,16 @@
 		<a class="close-reveal-modal">&#215;</a>
 	</div>
 	
-	<div id="downloadsModal" class="reveal-modal" data-reveal="">
+	<div id="laststableModal" class="reveal-modal" data-reveal="">
 		<h2>Download</h2>
 		<div class="panel">
-			Coming soon...
+			<h4>How to start server</h4>
+			<ol>
+				<li><p>Download the last build</p></li>
+				<li><p>Unzip</p></li>
+				<li><p>Open terminal and type <strong>npm start</strong> or <strong>node index.js</strong></p></li>
+			</ol>
+			<a class="button" href="http://3dsnode.github.io/downloads/3dsNode-stable.zip">Download now</a>
 		</div>
 		<a class="close-reveal-modal">&#215;</a>
 	</div>
