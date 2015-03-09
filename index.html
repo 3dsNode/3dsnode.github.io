@@ -23,16 +23,28 @@
 		<div data-magellan-expedition="fixed">
 			<dl class="sub-nav">
 				<dd data-magellan-arrival="about"><a href="#about">What is 3dsNode?</a></dd>
+				<dd data-magellan-arrival="pics"><a href="#pics">Pictures</a></dd>
 				<dd data-magellan-arrival="apps"><a href="#apps">Apps</a></dd>
 				<dd data-magellan-arrival="examples"><a href="#examples">Examples</a></dd>
 				<dd data-magellan-arrival="twitter"><a href="#twitter">Twitter</a></dd>
 			</dl>
 		</div>
+		<br/>
 		<a name="about"></a>
-		<h3 data-magellan-destination="apps">What is 3dsNode?</h3>
-			<div class="panel">
-				<p>This web application for New 3DS was created to connect to a PC and enhance the capacities of the New 3DS. All you need is a computer compatible with Node JS and Java.</p>
-			</div>
+		<h3 data-magellan-destination="about">What is 3dsNode?</h3>
+		<div class="panel">
+			<p>This web application for New 3DS was created to connect to a PC and enhance the capacities of the New 3DS. All you need is a computer compatible with Node JS and Java.</p>
+		</div>
+		<br/>
+		<a name="pics"></a>
+		<h3 data-magellan-destination="pics">Pictures</h3>
+		<div class="panel">
+			<ul class="small-block-grid-3 clearing-thumbs clearing-feature" data-clearing>
+				<li><a class="th" href="./img/main-app.jpg"><img src="./img/main-app.jpg"></a></li>
+				<li><a class="th" href="./img/controller-app.jpg"><img src="./img/controller-app.jpg"></a></li>
+				<li><a class="th" href="./img/media-app.jpg"><img src="./img/media-app.jpg"></a></li>
+			</ul>
+		</div>
 		<br/>
 		<a name="apps"></a>
 		<h3 data-magellan-destination="apps">Apps</h3>
@@ -40,28 +52,19 @@
 			<li>
 				<div class="panel">
 					<h4>Main App</h4>
-					<a href="#" data-reveal-id="aboutMainModal" class="button">About</a>
-					<a class="th" href="./img/main-app.jpg">
-						<img src="./img/main-app.jpg">
-					</a>
+					<a href="#" data-reveal-id="aboutMainModal" class="button disabled">About</a>
 				</div>
 			</li>
 			<li>
 				<div class="panel">
 					<h4>Controller App</h4>
 					<a href="#" data-reveal-id="aboutControllerModal" class="button">About</a>
-					<a class="th" href="./img/controller-app.jpg">
-						<img src="./img/controller-app.jpg">
-					</a>
 				</div>
 			</li>
 			<li>
 				<div class="panel">
 					<h4>Media App</h4>
-					<a href="#" data-reveal-id="aboutMediaModal" class="button">About</a>
-					<a class="th" href="./img/media-app.jpg">
-						<img src="./img/media-app.jpg">
-					</a>
+					<a href="#" data-reveal-id="aboutMediaModal" class="button disabled">About</a>
 				</div>
 			</li>
 		</ul>
@@ -90,22 +93,59 @@
 
 	<div id="aboutControllerModal" class="reveal-modal" data-reveal="">
 		<h2>About: Controller App</h2>
-		<div class="panel">
-			<h4>Keyboard</h4>
-			<table>
-  				<thead>
-    					<tr><th>New 3DS key</th><th>Emulated</th></tr>
-				</thead>
-				<tbody>
-					<tr><td>A</td><td>Keyboard A</td></tr>
-					<tr><td>B</td><td>Keyboard B</td></tr>
-					<tr><td>X</td><td>Keyboard X</td></tr>
-					<tr><td>Y</td><td>Keyboard Y</td></tr>
-					<tr><td>Stick</td><td>Mouse Move (x5 speed)</td></tr>
-					<tr><td>C-Stick</td><td>Mouse Move (x20 speed)</td></tr>
-				</tbody>
-			</table>
-		</div>
+		<h4>Emulation</h4>
+		<ul class="small-block-grid-3">
+			<li>
+				<div class="panel">
+					<table>
+  						<thead>
+    							<tr><th>Webpage buttons</th><th>Emulated keyboard</th></tr>
+						</thead>
+						<tbody>
+							<tr><td>Start</td><td>O</td></tr>
+							<tr><td>Select</td><td>P</td></tr>
+							<tr><td>Home</td><td>Windows</td></tr>
+							<tr><td>Enter</td><td>Enter</td></tr>
+							<tr><td>Exit</td><td>Exit</td></tr>
+							<tr><td>Backspace</td><td>Backspace</td></tr>
+							<tr><td>Space</td><td>Space</td></tr>
+							<tr><td>1..9</td><td>Numpad 1..9</td></tr>
+						</tbody>
+					</table>
+				</div>
+			</li>
+			<li>
+				<div class="panel">
+					<table>
+  						<thead>
+    							<tr><th>New 3DS</th><th>Emulated keyboard</th></tr>
+						</thead>
+						<tbody>
+							<tr><td>A</td><td>A</td></tr>
+							<tr><td>B</td><td>B</td></tr>
+							<tr><td>X</td><td>X</td></tr>
+							<tr><td>Y</td><td>Y</td></tr>
+							<tr><td>Directional arrows</td><td>Directional arrows</td></tr>
+						</tbody>
+					</table>
+				</div>
+			</li>
+			<li>
+				<div class="panel">
+					<table>
+  						<thead>
+    							<tr><th>New 3DS</th><th>Emulated mouse</th></tr>
+						</thead>
+						<tbody>
+							<tr><td>Stick</td><td>Move (x5 speed)</td></tr>
+							<tr><td>C-Stick</td><td>Move (x20 speed)</td></tr>
+							<tr><td>L</td><td>Left click</td></tr>
+							<tr><td>R</td><td>Right click</td></tr>
+						</tbody>
+					</table>
+				</div>
+			</li>
+		</ul>
 		<a class="close-reveal-modal">&#215;</a>
 	</div>
 
