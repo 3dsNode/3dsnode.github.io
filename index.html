@@ -100,7 +100,8 @@
 		<a name="downloads"></a>
 		<h3 data-magellan-destination="downloads">Downloads</h3>
 		<div class="panel">
-			<a href="#" data-reveal-id="laststableModal" class="button"><img src="./img/download.png">Download last stable build</a>
+			<a href="#" data-reveal-id="stableModal" class="button"><img src="./img/download.png">Download stable build</a>
+			<a href="#" data-reveal-id="devModal" class="button"><img src="./img/download.png">Download dev build</a>
 		</div>
 		<br/>
 		<a name="twitter"></a>
@@ -193,16 +194,24 @@
 		<a class="close-reveal-modal">&#215;</a>
 	</div>
 	
-	<div id="laststableModal" class="reveal-modal" data-reveal="">
+	<div id="stableModal" class="reveal-modal" data-reveal="">
 		<h2>Download</h2>
 		<div class="panel">
-			<h4>How to start server</h4>
-			<ol>
-				<li><p>Download the last build</p></li>
-				<li><p>Unzip</p></li>
-				<li><p>Open terminal and type <strong>npm start</strong> or <strong>node index.js</strong></p></li>
-			</ol>
-			<a class="button" href="http://3dsnode.github.io/downloads/3dsNode-stable.zip">Download now</a>
+			<h3>Linux/Mac</h3>
+			<p>	Open terminal and type <strong>npm install</strong> and <strong>npm start</strong></p>
+			<a class="button" href="https://github.com/3dsNode/3dsNode/archive/master.zip">Download now</a>
+		</div>
+		<a class="close-reveal-modal">&#215;</a>
+	</div>
+	
+	<div id="devModal" class="reveal-modal" data-reveal="">
+		<h2>Download</h2>
+		<div class="panel">
+			<h3>Linux/Mac</h3>
+			<p>	Open terminal and type <strong>npm install</strong> and <strong>npm start</strong></p>
+			<h3>Windows</h3>
+			<p>	Launch <strong>install.bat</strong> and <strong>start.bat</strong></p>
+			<a class="button" href="https://github.com/3dsNode/3dsNode/archive/dev.zip">Download now</a>
 		</div>
 		<a class="close-reveal-modal">&#215;</a>
 	</div>
