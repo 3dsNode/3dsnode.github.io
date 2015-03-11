@@ -199,7 +199,10 @@
 		<div class="panel">
 			<h3>Linux/Mac</h3>
 			<p>	Open terminal and type <strong>npm install</strong> and <strong>npm start</strong></p>
-			<a class="button" href="https://github.com/3dsNode/3dsNode/archive/master.zip">Download now</a>
+			<ul class="clearing-thumbs">
+				<li><a class="button" target="_blank" href="https://github.com/3dsNode/3dsNode/archive/master.zip">Download now</a></li>
+				<li><a class="button" data-reveal-id="donationModal">Donate</a></li>
+			</ul>
 		</div>
 		<a class="close-reveal-modal">&#215;</a>
 	</div>
@@ -211,7 +214,24 @@
 			<p>	Open terminal and type <strong>npm install</strong> and <strong>npm start</strong></p>
 			<h3>Windows</h3>
 			<p>	Launch <strong>install.bat</strong> and <strong>start.bat</strong></p>
-			<a class="button" href="https://github.com/3dsNode/3dsNode/archive/dev.zip">Download now</a>
+			<ul class="clearing-thumbs">
+				<li><a class="button" target="_blank" href="https://github.com/3dsNode/3dsNode/archive/dev.zip">Download now</a></li>
+				<li><a class="button" data-reveal-id="donationModal">Donate</a></li>
+			</ul>
+		</div>
+		<a class="close-reveal-modal">&#215;</a>
+	</div>
+
+	<div id="donationModal" class="reveal-modal" data-reveal="">
+		<h2>Donate</h2>
+		<div class="panel">
+			<p>If you like 3dsNode, you can send me a coffee or a beer</p>
+			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="VBSBNJGC9M6V4">
+				<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+				<img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
+			</form>
 		</div>
 		<a class="close-reveal-modal">&#215;</a>
 	</div>
